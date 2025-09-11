@@ -1,18 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const memberData = {
     // Laser Tag Teams
-    "Team A": [
-      "아나이스",
-      "브로디",
-      "도큐",
-      "아이린",
-      "제니퍼",
-      "로지",
-      "시드",
-      "윌리엄",
-    ],
-    "Team B": ["엘사", "진도", "릴리", "미아", "미카엘", "소피아", "우디"],
-    "Team C": ["아일라", "댄", "마이클", "엠제이", "팀", "토니", "라스"],
+    "Team A": ["댄", "라스", "미아", "마이클", "엠제이", "우디"],
+    "Team B": ["도큐", "아이린", "마이클", "소피아", "팀", "토니"],
+    "Team C": ["제니퍼", "진도", "릴리", "로지", "윌리엄"],
+    "Team D": ["아나이스", "아일라", "브로디", "엘사", "시드"],
 
     // Healing Programs
     "마사지 A": {
@@ -109,10 +101,10 @@ document.addEventListener("DOMContentLoaded", () => {
           programData.travel;
         personalInfoDiv.classList.remove("hidden");
       }
-      
+
       // 전체 일정 보기 버튼 표시
       showAllBtn.classList.remove("hidden");
-      
+
       showMessage(`"${ldapId}" 님의 스케줄입니다.`);
     } else {
       showMessage(
