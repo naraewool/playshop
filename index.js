@@ -109,6 +109,10 @@ document.addEventListener("DOMContentLoaded", () => {
           programData.travel;
         personalInfoDiv.classList.remove("hidden");
       }
+      
+      // 전체 일정 보기 버튼 표시
+      showAllBtn.classList.remove("hidden");
+      
       showMessage(`"${ldapId}" 님의 스케줄입니다.`);
     } else {
       showMessage(
@@ -123,6 +127,8 @@ document.addEventListener("DOMContentLoaded", () => {
     hideAllPersonalInfo();
     scheduleItems.forEach((item) => item.classList.add("visible"));
     ldapInput.value = "";
+    // 전체 일정 보기 버튼 숨기기
+    showAllBtn.classList.add("hidden");
     showMessage("전체 플레이샵 일정입니다.");
   };
 

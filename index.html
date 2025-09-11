@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API플랫폼 춘계 플레이샵</title>
+    <title>API플랫폼 추계 플레이샵</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -23,23 +23,6 @@
             </h1>
             <p class="text-lg text-blue-700">팀 대항전부터 힐링 프로그램까지!</p>
         </header>
-
-        <!-- Name Input Section -->
-        <section class="bg-white p-6 rounded-xl shadow-lg mb-8">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">내 스케줄 확인하기</h2>
-            <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
-                <input id="ldapInput" type="text" placeholder="본인의 영어 이름을 한국어로 입력하세요 (예: 소피아)"
-                    class="flex-grow p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <button id="searchBtn"
-                    class="bg-blue-600 text-white p-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300">
-                    <i class="fas fa-search"></i> 검색
-                </button>
-                <button id="showAllBtn"
-                    class="bg-gray-400 text-white p-3 rounded-lg shadow-md hover:bg-gray-500 transition-colors duration-300">
-                    전체 일정 보기
-                </button>
-            </div>
-        </section>
 
         <!-- Schedule Section -->
         <section class="grid grid-cols-1 gap-6">
@@ -82,6 +65,23 @@
                             팀별로 이동하세요! 프로그램 마치시면 각자 귀가하거나, 함께 식사하셔도 됩니다(인당 약 만원 지원)</p>
                     </li>
                 </ul>
+            </div>
+
+            <!-- Name Input Section -->
+            <div class="card p-6 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">내 스케줄 확인하기</h2>
+                <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
+                    <input id="ldapInput" type="text" placeholder="영어 이름 입력(예: 소피아)"
+                        class="flex-grow p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button id="searchBtn"
+                        class="bg-blue-600 text-white p-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300">
+                        <i class="fas fa-search"></i> 검색
+                    </button>
+                    <button id="showAllBtn"
+                        class="bg-gray-400 text-white p-3 rounded-lg shadow-md hover:bg-gray-500 transition-colors duration-300 hidden">
+                        전체 일정 보기
+                    </button>
+                </div>
             </div>
 
             <!-- Laser Survival Section -->
