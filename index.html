@@ -19,7 +19,7 @@
         <header class="text-center my-8">
             <h1 class="text-4xl md:text-5xl font-bold text-blue-900 mb-2 animate-bounce">
                 <i class="fas fa-trophy text-yellow-500 mr-2 icon-pulse"></i>
-                API플랫폼 춘계 플레이샵
+                API플랫폼 추계 플레이샵
             </h1>
             <p class="text-lg text-blue-700">팀 대항전부터 힐링 프로그램까지!</p>
         </header>
@@ -33,7 +33,7 @@
                     <h2 class="text-2xl font-bold text-gray-800">플레이샵 일정</h2>
                 </div>
                 <ul class="space-y-2 text-gray-600">
-                    <li><i class="fas fa-calendar-check text-blue-500 mr-2"></i> 일시: 2025년 9월 22일 월요일 12시~18시 + @</li>
+                    <li><i class="fas fa-calendar-check text-blue-500 mr-2"></i> 일시: 2025년 9월 22일 월요일 12시</li>
                     <li><i class="fas fa-map-marker-alt text-blue-500 mr-2"></i> 위치: 강남</li>
                     <li><i class="fas fa-users text-blue-500 mr-2"></i> 참여 인원: 22명</li>
                 </ul>
@@ -103,7 +103,7 @@
                     숨 막히는 긴장감과 짜릿한 승리의 순간이 기다리는 레이저 서바이벌 챔피언십에 오신 것을 환영합니다! 팀원들과 함께 빛나는 팀워크와 전략으로 전장을 지배하고, 잊지 못할 추억을
                     만들어보세요.
                 </p>
-                <div class="bg-gray-100 p-4 rounded-lg">
+                <div class="bg-gray-100 p-4 rounded-lg mb-4">
                     <h3 class="font-bold text-gray-800 mb-2">🏆 게임의 룰 (Game Rules)</h3>
                     <ul class="space-y-2 text-gray-600 list-disc list-inside">
                         <li><i class="fas fa-fist-raised text-blue-500 mr-1"></i> 치열한 토너먼트 방식으로 진행돼요! 가장
@@ -113,11 +113,114 @@
                                 1점</strong></li>
                         <li><i class="fas fa-stopwatch text-blue-500 mr-1"></i> 두 팀이 10분동안 치열한 경기를 벌입니다. 한 경기당 2분의 준비
                             시간이 필요해요.</li>
-                        <li><i class="fas fa-trophy text-blue-500 mr-1"></i> 보상: 우승팀 - 블루보틀 커피 한 잔, MVP - 블루보틀 텀블러
+                        <li><i class="fas fa-trophy text-blue-500 mr-1"></i> 우승팀과 MVP 1인에게는 보상이 주어집니다.
                         <li><i class="fas fa-users text-blue-500 mr-1"></i>기다리시는 동안 다른 전투를 관람하거나, "그리드" 게임을 해보세요. 1시간
                             30분 동안 맘껏 즐기세요!</li>
                         </li>
                     </ul>
+                </div>
+
+                <!-- Tournament Bracket -->
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl border-2 border-blue-200">
+                    <h3 class="font-bold text-gray-800 mb-4 text-center flex items-center justify-center gap-2">
+                        <i class="fas fa-trophy text-yellow-500"></i>
+                        <span>🏆 토너먼트 대진표 🏆</span>
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <!-- Match 1 -->
+                        <div class="bg-white p-4 rounded-lg shadow-md relative">
+                            <div
+                                class="absolute -top-2 -left-2 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                                1
+                            </div>
+                            <div class="space-y-3">
+                                <div
+                                    class="flex items-center justify-between bg-red-50 p-3 rounded-lg border border-red-200">
+                                    <span class="font-bold text-red-700">Team A</span>
+                                    <span class="text-gray-400">VS</span>
+                                    <span class="font-bold text-red-700">Team B</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Match 2 -->
+                        <div class="bg-white p-4 rounded-lg shadow-md relative">
+                            <div
+                                class="absolute -top-2 -left-2 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                                2
+                            </div>
+                            <div class="space-y-3">
+                                <div
+                                    class="flex items-center justify-between bg-blue-50 p-3 rounded-lg border border-blue-200">
+                                    <span class="font-bold text-blue-700">Team B</span>
+                                    <span class="text-gray-400">VS</span>
+                                    <span class="font-bold text-blue-700">Team C</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Match 3 -->
+                        <div class="bg-white p-4 rounded-lg shadow-md relative">
+                            <div
+                                class="absolute -top-2 -left-2 bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                                3
+                            </div>
+                            <div class="space-y-3">
+                                <div
+                                    class="flex items-center justify-between bg-green-50 p-3 rounded-lg border border-green-200">
+                                    <span class="font-bold text-green-700">Team C</span>
+                                    <span class="text-gray-400">VS</span>
+                                    <span class="font-bold text-green-700">Team D</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Match 4 -->
+                        <div class="bg-white p-4 rounded-lg shadow-md relative">
+                            <div
+                                class="absolute -top-2 -left-2 bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                                4
+                            </div>
+                            <div class="space-y-3">
+                                <div
+                                    class="flex items-center justify-between bg-purple-50 p-3 rounded-lg border border-purple-200">
+                                    <span class="font-bold text-purple-700">Team D</span>
+                                    <span class="text-gray-400">VS</span>
+                                    <span class="font-bold text-purple-700">Team A</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Match 5 -->
+                        <div class="bg-white p-4 rounded-lg shadow-md relative">
+                            <div
+                                class="absolute -top-2 -left-2 bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                                5
+                            </div>
+                            <div class="space-y-3">
+                                <div
+                                    class="flex items-center justify-between bg-yellow-50 p-3 rounded-lg border border-yellow-200">
+                                    <span class="font-bold text-yellow-700">Team A</span>
+                                    <span class="text-gray-400">VS</span>
+                                    <span class="font-bold text-yellow-700">Team C</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Final Match -->
+                        <div
+                            class="bg-gradient-to-r from-yellow-100 to-orange-100 p-4 rounded-lg border-2 border-yellow-300">
+                            <h4
+                                class="font-bold text-center text-orange-800 mb-2 flex items-center justify-center gap-2">
+                                <i class="fas fa-crown text-yellow-500"></i>
+                                <span>🏆 결승전 🏆</span>
+                            </h4>
+                            <div class="text-center">
+                                <p class="text-sm font-semibold text-orange-700">최고 승점 2팀</p>
+                                <p class="text-xs text-orange-600 mt-1">최종 순위 발표</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Personal Team Info Section -->
                 <div id="laser-team-info" class="hidden mt-4 bg-blue-50 p-4 rounded-lg border border-blue-200">
