@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const memberData = {
     // Laser Tag Teams
-    "Team A": ["댄", "라스", "미아", "마이클", "엠제이", "우디"],
-    "Team B": ["도큐", "아이린", "미카엘", "소피아", "팀", "토니"],
-    "Team C": ["제니퍼", "진도", "릴리", "로지", "윌리엄"],
-    "Team D": ["아나이스", "아일라", "브로디", "엘사", "시드"],
+    "Team A": ["댄", "라스", "미아", "마이클", "엠제이"],
+    "Team B": ["도큐", "아이린", "미카엘", "팀", "토니"],
+    "Team C": ["제니퍼", "진도", "우디", "로지", "윌리엄"],
+    "Team D": ["소피아", "아일라", "브로디", "엘사", "시드"],
 
     // Healing Programs
     "마사지 A": {
@@ -78,14 +78,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // 모든 힐링 프로그램 숨기기
     scheduleItems.forEach((item) => item.classList.remove("visible"));
 
-    if (personalProgram && personalTeam) {
-      // Show team info
-      const teamMembers = memberData[personalTeam];
-      document.querySelector("#team-name").innerHTML =
-        `<i class="fas fa-users mr-2"></i> ${personalTeam} 멤버`;
-      document.getElementById("team-members").textContent =
-        teamMembers.join(", ");
-      laserTeamInfo.classList.remove("hidden");
+    // 힐링 프로그램이 있는 경우 (팀 정보와 관계없이)
+    if (personalProgram) {
+      // 팀 정보가 있는 경우에만 팀 정보 표시 (주석 처리)
+      // if (personalTeam) {
+      //   const teamMembers = memberData[personalTeam];
+      //   document.querySelector("#team-name").innerHTML =
+      //     `<i class="fas fa-users mr-2"></i> ${personalTeam} 멤버`;
+      //   document.getElementById("team-members").textContent =
+      //     teamMembers.join(", ");
+      //   laserTeamInfo.classList.remove("hidden");
+      // }
 
       // 해당하는 힐링 프로그램만 보이기
       const programElement = document.querySelector(
